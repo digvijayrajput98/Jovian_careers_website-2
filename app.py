@@ -4,24 +4,24 @@ JOBS = [{
   'id':1,
   'title':'Data Analyst',
   'location':'Bengaluru,india',
-  'salary':'Rs.15,00.000'
+  'salary':'Rs.15,00,000'
 },{
   'id':2,
   'title':'Data Scientist',
   'location':'Delhi,india',
-  'salary':'Rs.15,00.000'
+  'salary':'Rs.15,00,000'
 },
 {
   'id':3,
   'title':'Frontend Engineer',
   'location':'Remote',
-  'salary':'Rs.12,00.000'
+  'salary':'Rs.12,00,000'
 },
 {
   'id':4,
   'title':'Backend Engineer',
   'location':'San Francisco, USA',
-  'salary':'$120,000'
+  'salary':'$150,000'
 }
 ]
 
