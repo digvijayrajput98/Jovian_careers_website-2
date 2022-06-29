@@ -1,15 +1,15 @@
 <div class="border-bottom row" style="margin-bottom:16px;padding-bottom:8px">
   <div class="col-9">
         <h4 
-          style = "color:rgb(120,120,120);margin-bottom:4px;">
+          style = "color:rgb(120,120,120);margin-bottom:4px;margin-left:25px;">
           {{job['title']}}
         </h4>
         <div>
-          <b>Location:</b>{{job['location']}}
+          <b style = "margin-left:25px">Location:</b>{{job['location']}}
          </div>
         {% if 'salary' in job %}
           <div>
-            <b>Salary:</b>{{job['salary']}}
+            <b style = "margin-left:25px">Salary:</b>{{job['salary']}}
          </div>
         {% endif %}
   </div>
