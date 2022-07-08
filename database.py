@@ -1,6 +1,6 @@
-
+import os
 from sqlalchemy import create_engine, text
-db_connection_string = "mysql+pymysql://29lzaxb8icqg:pscale_pw_8rh9TYVTudUaOCgPps801gveeWEYp7z_OsgWXvA07q4@je7hd4gvsmi0.ap-south-2.psdb.cloud/joviancareers?charset=utf8mb4"
+db_connection_string =os.environ['DB_CONNECTION_STRING'] 
 
 
 engine = create_engine(db_connection_string,connect_args={
@@ -10,3 +10,10 @@ engine = create_engine(db_connection_string,connect_args={
 }
                       )
 
+def load_jobs_from_db():
+  with engine.connect() as conn:
+    result = conn.execute(text("select * from jobs"))
+    jobs= []
+    for row in result.all():
+      jobs.append(dict(row))
+    return jobs
