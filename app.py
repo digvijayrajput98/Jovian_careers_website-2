@@ -14,6 +14,6 @@ def hello_world():
 def list_jobs():
   jobs = load_jobs_from_db()
   return jsonify(jobs)
-    
+@app.route("/job")  
 if __name__== "__main__":
   app.run(host = '0.0.0.0',debug = True)
